@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiKin</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        body {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: rgb(18, 35, 21);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background-color: green;
+        }
+
+        input[type="range"] {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden transition-all duration-75">
+
+    <nav id="nav" class="z-50">
+        <div class="flex justify-around items-center p-4 bg-GreenDark text-white">
+
+
+            <img src="./img//logoW.svg">
+
+            <button class="md:hidden text-2xl" onclick="togglenav()"><i class="ri-menu-line"></i></button>
+            <!-- window view -->
+            <ul class="hidden md:flex gap-4 m-4">
+                <li><a href="#work">HOW IT WORK</a></li>
+                <li><a href="#page4">PRICING</a></li>
+                <li><a href="#page5">BLOG</a></li>
+                <li><a href="#page8">CONTACT</a></li>
+            </ul>
+
+            <div class="gap-8 m-2 hidden md:flex">
+                <button>LOG IN</button>
+                <button class="bg-Greenlight p-2 rounded-lg text-black font-serif">GET FUNDING</button>
+            </div>
+
+        </div>
+
+        <!-- moblie view -->
+
+        <div class="hidden fixed inset-0 bg-GreenDark text-white p-4" id="mob_nav">
+
+            <div class="flex justify-around">
+
+                <img src="./img/logoW.svg">
+                <button class="text-2xl" onclick="togglenav()"><i class="ri-close-line"></i></button>
+            </div>
+
+            <div class="">
+                <ul class="flex flex-col justify-around items-center gap-7 m-7">
+                    <li><a href="#work" onclick="hidenav()">HOW IT WORK</a></li>
+                    <li><a href="#page4" onclick="hidenav()">PRICING</a></li>
+                    <li><a href="#page5" onclick="hidenav()">BLOG</a></li>
+                    <li><a href="#page8" onclick="hidenav()">CONTACT</a></li>
+                    <li><button onclick="hidenav()">LOG IN</button></li>
+                    <li> <button onclick="hidenav()">FIND FUNDING</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page 1 section -->
+
+    <div class="flex justify-start p-4 gap-12 h-screen flex-col items-center bg-GreenDark text-white">
+
+        <h1 class="text-6xl md:text-9xl text-center font-extrabold"><span id="span1">FINANCING</span><br /><span
+                class="text-Greenlight" id="span2">THE FUTURE</span>
+        </h1>
+        <p class="text-center">Pay suppliers faster, manage invoices, and extend cash for longer.<br />Get access to
+            funding without giving up equity, so that you can focus on<br /> growing your company.</p>
+        <button class="bg-Greenlight p-2 rounded-lg text-black font-serif">GET FUNDING</button>
+
+        <div class="w-full h-80"
+            style="background-image: url('./img/Bg.svg'); background-position: center; background-size: cover;"></div>
+    </div>
+
+    <!-- page 2 section -->
+
+    <div class="text-center bg-Wheet p-12" id="work">
+
+        <div class="flex justify-around">
+            <img src="./img/one.svg" id="m1" class="relative top-4">
+            <img src="./img/two.svg" id="m2" class="relative -top-8">
+        </div>
+
+        <div class="">
+            <h1 class="text-6xl md:text-8xl p-10 md:p-1">GOOD FOR THE<br />PLANET. AND<br />YOUR BUSINESS.</h1>
+            <p class="p-8">We are on a mission to help good businesses grow. This is why we reward<br />sustainable
+                businesses with
+                lower fees, freeing up even more of your cash.<br />Get started and access funding in 5 minutes.</p>
+            <button class="bg-Greenlight p-2 rounded-lg text-black font-serif mt-4">GET FUNDING</button>
+        </div>
+
+        <div class="flex p-8 flex-col md:flex-row justify-around">
+
+            <img src="./img/three.svg" id="m3" class="w-40">
+
+            <div class="flex gap-12">
+                <img class="w-40" src="./img/four.svg" id="m4">
+                <img src="./img/five.svg" class="relative -top-12 -right-4" id="m5">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- page 3 section  -->
+
+    <div class="" id="page3">
+
+        <!-- first section -->
+        <div class="flex flex-col md:flex-row items-center justify-around p-8 gap-8">
+
+            <div class="flex flex-col items-center md:items-start justify-around">
+
+                <div class=" flex flex-col items-center md:items-start">
+                    <button class="bg-Greenlight rounded-full text-black font-bold h-12 w-12">01</button>
+
+                    <h2 class="text-5xl font-bold mt-4">GROW WITH</h2>
+                    <h2 class="text-5xl font-bold">THE FLOW</h2>
+                </div>
+
+                <div class="">
+                    <p class="font-semibold text-center md:text-left">We help you preserve your cash, so that you can
+                        focus on growing your <br /> business and improve
+                        cash flow.</p>
+                </div>
+
+            </div>
+
+            <div class="w-1/2">
+                <img src="./img/2.png" class="rounded-xl">
+            </div>
+
+        </div>
+
+        <!-- second section    -->
+        <div class="flex flex-col md:flex-row items-center justify-around p-8 gap-8">
+
+            <div class="flex flex-col items-center md:items-start justify-around">
+
+                <div class=" flex flex-col items-center md:items-start">
+                    <button class="bg-Greenlight rounded-full text-black font-bold h-12 w-12">02</button>
+
+                    <h2 class="text-5xl font-bold mt-4">ADAPTABLE</h2>
+                    <h2 class="text-5xl font-bold">FUNDING. ENDLESS</h2>
+                    <h2 class="text-5xl font-bold">POSSIBILITIES.</h2>
+                </div>
+
+                <div class="">
+                    <p class="font-semibold text-center md:text-left">We help you preserve your cash, so that you can
+                        focus on growing your <br /> business and improve
+                        cash flow.</p>
+                </div>
+
+            </div>
+
+            <div class="w-1/2">
+                <img src="./img/2.png" class="rounded-xl">
+            </div>
+
+        </div>
+
+        <!-- third section -->
+        <div class="flex flex-col md:flex-row items-center justify-around p-8 gap-8">
+
+            <div class="flex flex-col items-center md:items-start justify-around">
+
+                <div class=" flex flex-col items-center md:items-start">
+                    <button class="bg-Greenlight rounded-full text-black font-bold h-12 w-12">03</button>
+
+                    <h2 class="text-5xl font-bold mt-4">FAST FUNDS.</h2>
+                    <h2 class="text-5xl font-bold">FULL EQUITY.</h2>
+                </div>
+
+                <div class="">
+                    <p class="font-semibold text-center md:text-left">We help you preserve your cash, so that you can
+                        focus on growing your <br /> business and improve
+                        cash flow.</p>
+                </div>
+
+            </div>
+
+            <div class="w-1/2">
+                <img src="./img/2.png" class="rounded-xl">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- page 4 section -->
+
+    <div class="md:h-screen flex flex-col md:flex-row bg-GreenDark text-white p-4" id="page4">
+
+        <div class="flex flex-col justify-around gap-12 p-8">
+            <div class="">
+                <h2 class="text-6xl md:text-8xl font-extrabold">CALCULATE</h2>
+                <h2 class="text-6xl md:text-8xl font-extrabold">YOUR</h2>
+                <h2 class="text-6xl md:text-8xl font-extrabold">FUNDING</h2>
+            </div>
+            <div class="flex gap-6">
+                <img src="./img/4.1.svg" class="relative top-7" id="p-1">
+                <img src="./img/4.2.svg" class="relative -top-2" id="p-2">
+                <img src="./img/4.3.svg" class="relative left-10 top-4" id="p-3">
+            </div>
+            <p>Your funding – and your fee – is based on how financially healthy and ESG aware your company is.
+                <br />The more ESG accreditations you have, the lower your fee.
+            </p>
+            <button class="bg-Greenlight p-2 w-44 rounded-lg text-black font-serif">GET FUNDING</button>
+        </div>
+
+        <div class="w-full h-full rounded-md border p-8 flex justify-between py-32 flex-col gap-8">
+
+            <div class="p-4">
+
+                <div class="flex justify-between">
+                    <label for="invoice" class="text-4xl font-extrabold">Invoice Amount</label>
+                    <input type="range" class="w-52" id="invoice" min="100" max="300">
+                    <span class="text-3xl font-extrabold"><span id="in" class="text-3xl font-extrabold">100</span>
+                        $</span>
+                </div>
+
+                <div class="flex justify-between">
+                    <label for="month" class="text-4xl font-extrabold">Monthly pay back</label>
+                    <input type="range" id="month" min="3" max="8">
+                    <span id="mon" class="text-3xl font-extrabold">6</span>
+                </div>
+
+                <div class="flex justify-between">
+                    <label for="credit" id="cre" class="text-4xl font-extrabold">Credit Rate</label>
+                    <input type="range" id="credit" min="2" max="60">
+                    <span id="crespan" class="text-3xl font-extrabold">4</span>
+                </div>
+
+            </div>
+
+
+            <div class="">
+
+                <div class="flex justify-around">
+                    <sapn class="text-3xl md:text-4xl -ml-7 font-extrabold text-Greenlight md:whitespace-nowrap">MONTHLY
+                        REPAYMENTS :</sapn>
+                    <h1 class="text-5xl font-extrabold">
+                        <sapn id="rate" class="text-3xl md:text-5xl font-extrabold text-Greenlight">1200</sapn>$
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- page 5 section -->
+
+    <div class="p-6 bg-RoyalBlue relative" id="page5">
+
+        <div class="absolute right-12 text-2xl md:text-8xl text-white font-extrabold">
+            <h2>WHO WE</h2>
+            <h2>FUND</h2>
+        </div>
+
+        <img src="./img/hands.webp" class="rounded-md">
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 p-4">
+
+            <div class="w-96 h-96 flex flex-col justify-center items-center border text-center border-black">
+                <h1 class="text-3xl font-bold">UK-BASED SMALL <br />TO MINSIZE BUSINESS</h1>
+            </div>
+
+            <div class="w-96 h-96 flex flex-col justify-center items-center text-center border border-black">
+                <h1 class="text-3xl font-bold">WHO NEED TO PAY<br />TO SUPPLIERS <br />AROUND THE WORLD</h1>
+            </div>
+
+            <div class="w-96 h-96 flex flex-col justify-center items-center border text-center border-black">
+                <h1 class="text-3xl font-bold">WHO CAN DEMONSTRATE<br />SUSTAINABILITY EFFORTS</h1>
+            </div>
+        </div>
+
+        <div class="flex justify-around gap-12 mt-5 items-center" id="slider">
+            <img class=""
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/65cc855bb24174b77269f1a6_nice.svg">
+            <img class="w-60 h-`10"
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/66a39b660fe233de5f010b54_Lestrange%20logo.png">
+            <img class="w-60 h-10"
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/66fd673982014c69f8a62243_Dr%20Will%27s%20Logo-p-1080.png">
+            <img class="w-96 h-10"
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/66a3610749b3820e5723ee35_hylo.png">
+            <img class=""
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/65cc834abd58d205867e0389_manors.svg">
+            <img
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/65cc834a42d58de33d62b333_nue%20co.svg">
+            <img class="w-60 h-10"
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/66a39b5b35d9d4841a9f9d8d_Homethings%20logo.png">
+            <img class="w-60 h-10"
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/65f85f4f0a50e6802d4a8942_image.png">
+            <img class="w-96 h-10"
+                src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/66a39a5517dbbbc3e40b1832_Citizens%20logo.png">
+        </div>
+
+    </div>
+
+    <!-- page 6 section -->
+
+    <div class="text-center bg-GreenDark text-gray-300 p-12" id="page6">
+
+        <div class="flex justify-around">
+            <img src="./img/one_percent_white2.svg" id="pm1" class="w-44">
+            <img src="./img/planet_mark_white1.svg" id="pm2" class="w-52">
+        </div>
+
+        <div class="">
+            <h1 class="text-4xl md:text-6xl p-10  font-semibold md:p-1">DO IT FOR THE PLANTS. </h1>
+            <h1 class="text-4xl md:text-6xl p-10 font-semibold md:p-1">DO IT FOR YOUR BUSINESS. </h1>
+            <h1 class="text-4xl md:text-6xl p-10 font-semibold md:p-1">THE ETTER YOUR ESG</h1>
+            <h1 class="text-4xl md:text-6xl p-10 font-semibold md:p-1">SCORE GETS,THE BIGGER</h1>
+            <h1 class="text-4xl md:text-6xl p-10 font-semibold md:p-1">THE DISCOUNTS </h1>
+        </div>
+
+        <div class="flex p-12 flex-col md:flex-row justify-around">
+
+            <img src="./img/climate_neutral_white4.svg" id="pm3" class="w-52 relative -left-12 -top-32">
+            <img src="./img/four.svg" class="w-40 relative top-16" id="pm4">
+            <img src="./img/five.svg" class="w-40" id="pm5">
+
+            <div class="flex gap-12">
+                <img class="w-40 relative -left-18" src="./img/b_corp_white3.svg" id="pm6">
+                <img src="./img/planet_mark_white1.svg" class="relative w-52 md:-top-24" id="pm7">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- page 7 section -->
+
+    <div class="p-12 md:p-24 bg-Wheet flex flex-col md:flex-row justify-center md:justify-around items-center gap-2 md:gap-6"
+        id="page7">
+
+        <div class="">
+            <h1 class="text-4xl font-bold md:text-6xl">FAQS</h1>
+        </div>
+
+        <div class="w-1/2">
+
+            <div class="border flex flex-col border-b-black pb-4 mb-2 relative">
+
+                <dt aria-controls="faq1" class="text-4xl md:text-5xl font-extrabold">How can I access the funds?</dt>
+                <dd id="faq1" class="hidden mt-3 text-lg md:text-xl font-semibold transition-all">Once you've completed
+                    a brief
+                    questionnaire about
+                    your business and connected
+                    your financial accounts,
+                    you'll have<br /> immediate access to a portion of your funds. The full amount will be available
+                    within
+                    72 hours
+                    after our team manually<br /> checks your company details.
+                </dd>
+            </div>
+
+            <div class="border flex flex-col border-b-black pb-4 mb-2">
+                <dt aria-controls="faq2" class="text-4xl md:text-5xl font-extrabold">What can I use the funding for?
+                </dt>
+                <dd id="faq2" class="hidden mt-3 text-xl font-semibold">We offer financing for your supplier invoices.
+                    Simply upload your supplier's
+                    invoice to our system, and we'll handle the<br /> full payment to them. For a list of goods we don't
+                    cover,
+                    please refer to our Terms<br /> of Service: https://www.kikin.io/terms-of-service.</dd>
+            </div>
+            <div class="border flex flex-col border-b-black pb-4 mb-2">
+                <dt aria-controls="faq3" class="text-4xl md:text-5xl font-extrabold">How do I know that my company
+                    <br />is a
+                    good
+                    match?
+                </dt>
+                <dd id="faq3" class="hidden mt-3 text-xl font-semibold">We love supporting UK-based businesses that need
+                    to
+                    pay their suppliers,
+                    whether they're local or abroad. Just share
+                    <r />your financial history with us so we can figure out your
+                    credit line. Additionally, if you’re committed to sustainability,<br /> we appreciate that and offer
+                    special
+                    discounts on our fees.
+
+
+                </dd>
+            </div>
+            <div class="border flex flex-col border-b-black pb-4 mb-2">
+                <dt aria-controls="faq4" class="group text-4xl md:text-5xl font-extrabold">Can I pay to suppliers
+                    abroad?</dt>
+                <dd id="faq4" class="hidden mt-3 text-3xl font-semibold">Certainly! In addition to our local UK
+                    suppliers, we
+                    also facilitate
+                    international payments to a range of countries. If you're <br />paying invoices in different
+                    currencies, a
+                    small exchange fee will apply.
+
+                </dd>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- page 8 section -->
+
+    <div class="bg-GreenDark h-screen text-white flex justify-between items-center flex-col pt-8"
+        style="background-image: url('https://cdn.prod.website-files.com/635273ea37c256ef2835d522/65363617f2f8b421dacfacc5_Illustration.svg'); background-size: cover; background-position: center; object-fit: cover;" id="page8">
+
+        <div class="text-4xl md:text-8xl font-extrabold text-center">
+            <h2>GET FUNDING.</h2>
+            <h2 class="text-Orangelight">CHANGE THE</h2>
+            <h2 class="text-Orangelight">WORLD.</h2>
+            <button class=" m-4 md:w-52 font-serif border border-gray p-2 rounded-lg text-lg hover:scale-105">SIGN UP TO
+                KIKIN</button>
+        </div>
+
+        <div class="flex  flex-wrap justify-around w-screen items-center bg-DARHGRREN backdrop-blur-md opacity-95 h-72">
+
+            <div class="flex gap-2 m-4">
+                <img
+                    src="https://cdn.prod.website-files.com/635273ea37c256ef2835d522/640748001950737db50fb32b_k-symbol.svg">
+                <h1 class="text-4xl">GET IN TOUCH <br /> Hello@kikin.io</h1>
+            </div>
+
+            <div class="text-lg m-4">
+                <h2>2023 Kikin Financial Ltd<br />Сompany no. 14569152<br />Ground Floor, Verse Building, <br />18
+                    Brunswick Place, London, N1 6DZ</h2>
+            </div>
+
+            <div class="m-4">
+                <h1 class="text-lg">Blog</h1>
+                <h1 class="text-lg">Private Policy</h1>
+                <h1 class="text-lg">Terms of service</h1>
+                <div class="">
+                    <button>Linkedin</button>
+                    <button>X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>
